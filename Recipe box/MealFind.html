@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal Finder</title>
+    <link rel="stylesheet" href="MealFind.css" />
+    <script
+      src="https://kit.fontawesome.com/f30fac2c61.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <h1>Recipe Box</h1>
+        </div>
+        <div class="searchBar">
+          <input type="text" placeholder="Search Here" id="searchInput" />
+          <button id="searchBtn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </nav>
+
+      <div class="category">
+        <button id="prevBtn"><i class="fa-solid fa-angle-left"></i></button>
+
+        <div class="dishs">
+          <input type="button" class="dishVal" value="Cake" />
+          <input type="button" class="dishVal" value="Biryani" />
+          <input type="button" class="dishVal" value="Cream" />
+        </div>
+        <div class="dishs">
+          <input type="button" class="dishVal" value="Chicken" />
+          <input type="button" class="dishVal" value="Biryani" />
+          <input type="button" class="dishVal" value="Ice cream" />
+        </div>
+        <div class="dishs">
+          <input type="button" class="dishVal" value="Salad" />
+          <input type="button" class="dishVal" value="Sandwich" />
+          <input type="button" class="dishVal" value="Banana" />
+        </div>
+        <button id="nextBtn"><i class="fa-solid fa-angle-right"></i></button>
+      </div>
+
+      <div class="showMeal">
+        <!-- Meal cards will be dynamically inserted here -->
+      </div>
+    </div>
+
+    <!-- Modal Structure for Meal Details -->
+    <div id="mealModal" class="modal" style="display: none">
+      <div class="modal-content">
+        <span id="closeBtn" class="close-btn">&times;</span>
+        <div id="modalMealDetails"></div>
+      </div>
+    </div>
+
+    <script src="MealFind.js"></script>
+  </body>
+</html>
